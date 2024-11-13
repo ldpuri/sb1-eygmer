@@ -105,8 +105,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <main className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-background w-screen">
+      <main className="container mx-auto px-4 py-8 max-w-4xl">
         {bookingState.step < TOTAL_STEPS && (
           <ProgressBar currentStep={bookingState.step} totalSteps={TOTAL_STEPS - 1} />
         )}
